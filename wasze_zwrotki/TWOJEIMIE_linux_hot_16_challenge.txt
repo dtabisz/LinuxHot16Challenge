@@ -1,107 +1,170 @@
-# AUTOR: TWOJEIMIE
+# AUTOR: DT3
 # Zasady: https://github.com/ZPXD/LinuxHot16Challenge
-
 # HOT 16
 
 # 1. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+clear
+#czyści ekran z tego, co było wyswietlone/zrobione wcześniej
 
 # 2. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+pwd 
+#pokazuje mi scieżkę, gdzie jestem w systemie
 
 # 3. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+whoami
+#pokazuje mi jako jaki user dzialam (wygodne, gdy skaczę między serwerami oraz gdy przez "su" loguję się na cudze konta)
 
 # 4. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+su 
+#set user - bez argumentow loguje nas na roota, z argumentem: su ktostam loguje mnie na konto użytkowania ktostam.
 
 # 5. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+man
+# składnia: "man polecenie" otwiera pomoc dotyczącą polecenia. Man zagadnienie - otwiera pomoc dotyczącą zagadnienia np.: man fileutils 
 
 # 6. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+cd
+#Change directory - przenosi do katalogu podanego w argumencie, cd ze spacją przenosi do katalogu domowego
 
 # 7. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+cp
+#CoPy - kopiuje plik, katalog. składnia "cp co_kopiujesz gdzie_kopiujesz"
 
 # 8. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+mv
+#MoVe - przenosi plik, katalog składnia: mv co_przenosisz gdzie_przenosisz
 
 # 9. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+rm 
+#ReMove - usuwa plik lub katalog. Składnia: rm co_usuwasz. Ostrożnie z argumentami! rm -r usunie katalog i wszystko w nim. rm -rf nawet nie zapyta czy tego chcesz.
 
 # 10. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+who
+#powie kto jeszcze ma uruchomione procesy na serwerze
 
 # 11. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+cat
+#wyświetla zawartość pliku, składnia: cat nazwa_pliku
 
 # 12. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+ls
+#wyświetla zawartość katalogu, zwykle uzywana z argumentami np.: "ls -la" wyświetli wszystko w katalogu, włacznie z właścicielami i uprawnieniami. 
 
 # 13. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+less
+#wyświetla zawartośc pliku podzielona na ekrany ale można poruszać się po tej zawartości tam i z powrotem strzałkami, mozna też wyjść 
 
 # 14. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+grep
+#wyłapuje zadana fraze z wyświetlanego pliku, wyświetla linijki z tą frazą. samodzielnie używasz: grep "co_szukasz" plik_w_ktorym szukasz
 
 # 15. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+ps
+#pokazuje procesy
 
 # 16. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
-
+exit
+#wylogowuje, zamyka treminal, zamyka połączenie
 
 
 # HOT 32
 
 # 17. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+sudo
+#pozwala wykonać jedną komende z prawami roota, pyta o Twoje hasło użytkownika
 
 # 18. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+visudo
+#pozwala dodać użytkowników do listy użytkowników uprawnionych do używania sudo, otwiera edytor i edytuje plik /etc/sudoers
 
 # 19. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+systemctl
+#komenda uruchamiajaca, restartująca i wyłączająca usługi (i system) np: "systemctl reboot" resetuje cały system. 
 
 # 20. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+modprobe
+#ładuje i wyłącza moduły w jądrze, użyteczne na desktopie, gdy męczysz się ze sterownikami, na serwerze nie tykaj o ile nie musisz! 
 
 # 21. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+lsusb
+#pokazuje co system widziw portach usb, co do nich jest podpięte. Wygodne na desktopie
 
 # 22. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+df
+#pokazuje ilość zajętego dysku, wynik jest mało czytelny, chyba że użyjesz składni: df -h
 
 # 23. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+mount
+#montuje partycje do systemu, użyte bez argumentów pokazuje co jest zamontowane. Często zastępuje je pmount dla piórek usb.
 
 # 24. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+umount
+#odmontowuje partycje od systemu
 
 # 25. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+ifconfig
+#konfiguruje sieć i wyświetla interfejsy sieciowe, gdy chcesz znać swoje IP pisz: "ifconfig -a" , pozostałych opcji nie tykaj bez konsultacji z man!!!
 
 # 26. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+iwconfig
+#wyświetla i konfiguruje połączenia wifi. Poza zwykłym wyświetleniem interfejsów wifi używać bardzo ostrożnie (z nosem w manualu)
 
 # 27. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+iptables
+#tym poleceniem (z argumentami) ustawiamy i regulujemy firewall na Linuksie. Obecnie to nakładka na nftables (polecenie nft). Ostrożnie na zdalnych komputerach!
 
 # 28. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+dpkg
+#Na Debianie i pochodnych (Ubuntu) narzedzie do ręcznego konfigurowania pakietów, dpkg -i instaluje, innych opcji używasz, gdy system nawala i sam pisze co użyć.
 
 # 29. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+aptitude
+#system zarządzania pakietami w Debianie i pochodnych. Pseudograficzny interfejs pozwala wygodnie czytać co się robi.  
 
 # 30. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+apt
+#domyślna komenda do zarządzania pakietami w Debianie i pochodnych. Dla zdrowia psychicznego, powinna służyć do zainstalowania aptitude ;) 
 
 # 31. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+mc
+#masz dość babrania się z cp, cd, rm, ls, chmod, chown - zainstaluj mc i to samo robisz w pseudograficznym środowisku. 
 
 # 32. komenda
 # Opis... - czyli co to robi. Krótki, w jednej linijce.
+htop
+#zarządzasz procesami w pseudograficznym srodowisku, wygodnie je przeglądasz. Dla masochistów jest ps oraz top ;) 
+
 
 
 
